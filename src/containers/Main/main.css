@@ -1,0 +1,22 @@
+.Main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #304352;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.Main > * {
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+@media (max-width: 670px){
+    .Main{
+        flex-flow: column;
+    }
+}
